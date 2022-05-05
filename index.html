@@ -10,20 +10,246 @@
 
     <link href="/css/style.css" rel="stylesheet">
 
-    <title>Hello, world! Day Three</title>
+    <title>Final Project AJR</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!-- Nav Bar -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Event Calendar</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero Images / Carousel -->
+
+    <div class="container-fluid">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner" >
+          <div class="carousel-item active carousel-image">
+            <img src="./img/img1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-image">
+            <img src="./img/img2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-image">
+            <img src="./img/img5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Carousel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active p-3 d-flex flex-column align-items-center text-center bg-dark text-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <img src="https://thumbs.dreamstime.com/b/cheerful-beautiful-female-pilot-showing-thumbnail-expressing-happiness-starting-air-trip-cheerful-beautiful-female-pilot-144570269.jpg" class="img-thumbnail"  alt="...">
+                <h5 class="p-2">Ruby Jennings</h5>
+                <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <div class="col-lg-3">
+                <img src="https://thumbs.dreamstime.com/b/positive-smiling-dark-skinned-guy-showing-his-thumbnail-knitted-sweater-being-great-mood-work-141732636.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Leon Hanson</h5>
+                <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <div class="col-lg-3">
+                <img src="https://thumbs.dreamstime.com/b/cheerful-creative-business-employee-resting-his-swivel-chair-33107996.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Meghan Stone</h5>
+                <p>Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <div class="col-lg-3">
+                <img src="https://thumbs.dreamstime.com/b/handsome-photographer-camera-office-computer-front-handsome-photographer-camera-office-100399367.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Willie Perkins</h5>
+                <p>UX Engineer at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item p-3 d-flex flex-column align-items-center text-center bg-light text-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <img src="https://thumbs.dreamstime.com/b/cheerful-beautiful-female-pilot-showing-thumbnail-expressing-happiness-starting-air-trip-cheerful-beautiful-female-pilot-144570269.jpg" class="img-thumbnail"  alt="...">
+                <h5 class="p-2">Ruby Jennings</h5>
+                <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <div class="col-lg-3">
+                <img src="https://thumbs.dreamstime.com/b/positive-smiling-dark-skinned-guy-showing-his-thumbnail-knitted-sweater-being-great-mood-work-141732636.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Leon Hanson</h5>
+                <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <div class="col-lg-3">
+                <img src="https://thumbs.dreamstime.com/b/cheerful-creative-business-employee-resting-his-swivel-chair-33107996.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Meghan Stone</h5>
+                <p>Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <div class="col-lg-3">
+                <img src="https://thumbs.dreamstime.com/b/handsome-photographer-camera-office-computer-front-handsome-photographer-camera-office-100399367.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Willie Perkins</h5>
+                <p>UX Engineer at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item p-3 d-flex flex-column align-items-center text-center bg-dark text-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <img src="https://thumbs.dreamstime.com/b/cheerful-beautiful-female-pilot-showing-thumbnail-expressing-happiness-starting-air-trip-cheerful-beautiful-female-pilot-144570269.jpg" class="img-thumbnail"  alt="...">
+                <h5 class="p-2">Ruby Jennings</h5>
+                <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <div class="col-lg-3">
+                <img src="https://thumbs.dreamstime.com/b/positive-smiling-dark-skinned-guy-showing-his-thumbnail-knitted-sweater-being-great-mood-work-141732636.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Leon Hanson</h5>
+                <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <div class="col-lg-3">
+                <img src="https://thumbs.dreamstime.com/b/cheerful-creative-business-employee-resting-his-swivel-chair-33107996.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Meghan Stone</h5>
+                <p>Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <div class="col-lg-3">
+                <img src="https://thumbs.dreamstime.com/b/handsome-photographer-camera-office-computer-front-handsome-photographer-camera-office-100399367.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Willie Perkins</h5>
+                <p>UX Engineer at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Best Sellers
+
+    <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white">
+      <h4 class="m-3">The Speakers</h4>
+      <h5>Write a few lines about the event speakers to highlight their expertise in the field</h5><br>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="https://thumbs.dreamstime.com/b/cheerful-beautiful-female-pilot-showing-thumbnail-expressing-happiness-starting-air-trip-cheerful-beautiful-female-pilot-144570269.jpg" class="img-thumbnail"  alt="...">
+            <h5 class="p-2">Ruby Jennings</h5>
+            <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
+          </div>
+          <div class="col-lg-3">
+            <img src="https://thumbs.dreamstime.com/b/positive-smiling-dark-skinned-guy-showing-his-thumbnail-knitted-sweater-being-great-mood-work-141732636.jpg" class="img-thumbnail" alt="...">
+            <h5 class="p-2">Leon Hanson</h5>
+            <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
+          </div>
+          <div class="col-lg-3">
+            <img src="https://thumbs.dreamstime.com/b/cheerful-creative-business-employee-resting-his-swivel-chair-33107996.jpg" class="img-thumbnail" alt="...">
+            <h5 class="p-2">Meghan Stone</h5>
+            <p>Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
+          </div>
+          <div class="col-lg-3">
+            <img src="https://thumbs.dreamstime.com/b/handsome-photographer-camera-office-computer-front-handsome-photographer-camera-office-100399367.jpg" class="img-thumbnail" alt="...">
+            <h5 class="p-2">Willie Perkins</h5>
+            <p>UX Engineer at Moqups. Runner, parent and coffee lover.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+    <!-- Contact Form -->
+
+    <div class="container bg-light">
+      <div class="form-wrap">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
   </body>
 </html>
