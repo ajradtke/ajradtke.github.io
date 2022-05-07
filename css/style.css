@@ -7,3 +7,12 @@ body {
     background-color: rgba(0,0,0,0.6);
 }
 
+.sticky-nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.border-dashed {
+    border-style: dashed;
+}

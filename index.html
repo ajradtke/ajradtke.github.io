@@ -18,8 +18,8 @@
     
     <!-- Nav Bar -->
 
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid sticky-nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand text-white" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,15 +31,21 @@
                 <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Link</a>
+                <a class="nav-link text-white" href="#">Best Sellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Full Catalog</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Event Calendar</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Become A Member</a>
+              </li>
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -58,7 +64,7 @@
 
         <div class="carousel-inner" >
           <div class="carousel-item active carousel-image">
-            <img src="./img/img1.jpg" class="d-block w-100" alt="...">
+            <img src="./img/Backsplash-resize.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
@@ -66,7 +72,7 @@
           </div>
 
           <div class="carousel-item carousel-image">
-            <img src="./img/img2.jpg" class="d-block w-100" alt="...">
+            <img src="./img/bartopbottles-resize.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
@@ -74,7 +80,7 @@
           </div>
 
           <div class="carousel-item carousel-image">
-            <img src="./img/img5.jpg" class="d-block w-100" alt="...">
+            <img src="./img/arcticclam-resize.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>
@@ -94,35 +100,33 @@
       </div>
     </div>
 
-    <!-- Product Carousel -->
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- Product Carousel XS-LG -->
+    
+    <div id="carouselExampleIndicators" class="carousel slide d-lg-none" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
+      
       <div class="carousel-inner">
-        <div class="carousel-item active p-3 d-flex flex-column align-items-center text-center bg-dark text-white">
-          <div class="container">
+
+      <!-- Small Carousel Slide 1 -->
+        <div class="carousel-item active">
+          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
             <div class="row">
-              <div class="col-lg-3">
-                <img src="https://thumbs.dreamstime.com/b/cheerful-beautiful-female-pilot-showing-thumbnail-expressing-happiness-starting-air-trip-cheerful-beautiful-female-pilot-144570269.jpg" class="img-thumbnail"  alt="...">
-                <h5 class="p-2">Ruby Jennings</h5>
-                <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
-              </div>
-              <div class="col-lg-3">
-                <img src="https://thumbs.dreamstime.com/b/positive-smiling-dark-skinned-guy-showing-his-thumbnail-knitted-sweater-being-great-mood-work-141732636.jpg" class="img-thumbnail" alt="...">
-                <h5 class="p-2">Leon Hanson</h5>
-                <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
-              </div>
-              <div class="col-lg-3">
-                <img src="https://thumbs.dreamstime.com/b/cheerful-creative-business-employee-resting-his-swivel-chair-33107996.jpg" class="img-thumbnail" alt="...">
+              <!-- Apple Gobbler SM -->
+              <div class="col-12">
+                <img src="./img/AppleGobblerSM.png" class="img-thumbnail" alt="...">
                 <h5 class="p-2">Meghan Stone</h5>
                 <p>Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
               </div>
-              <div class="col-lg-3">
-                <img src="https://thumbs.dreamstime.com/b/handsome-photographer-camera-office-computer-front-handsome-photographer-camera-office-100399367.jpg" class="img-thumbnail" alt="...">
+              <!-- Ope All Berries SM -->
+              <div class="col-12">
+                <img src="./img/OABSM.jpg" class="img-thumbnail" alt="...">
                 <h5 class="p-2">Willie Perkins</h5>
                 <p>UX Engineer at Moqups. Runner, parent and coffee lover.</p>
               </div>
@@ -130,26 +134,39 @@
           </div>
         </div>
 
-        <div class="carousel-item p-3 d-flex flex-column align-items-center text-center bg-light text-white">
-          <div class="container">
+      <!-- Small Carousel Slide 2 -->
+        <div class="carousel-item">
+          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
             <div class="row">
-              <div class="col-lg-3">
-                <img src="https://thumbs.dreamstime.com/b/cheerful-beautiful-female-pilot-showing-thumbnail-expressing-happiness-starting-air-trip-cheerful-beautiful-female-pilot-144570269.jpg" class="img-thumbnail"  alt="...">
+              <!-- Banana French Toasty SM -->
+              <div class="col-12">
+                <img src="./img/BananaFrenchToastySM.jpg" class="img-thumbnail"  alt="...">
                 <h5 class="p-2">Ruby Jennings</h5>
                 <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
               </div>
-              <div class="col-lg-3">
-                <img src="https://thumbs.dreamstime.com/b/positive-smiling-dark-skinned-guy-showing-his-thumbnail-knitted-sweater-being-great-mood-work-141732636.jpg" class="img-thumbnail" alt="...">
+              <!-- Marzipan's Labyrinth SM -->
+              <div class="col-12">
+                <img src="./img/MarzipanSM.jpg" class="img-thumbnail" alt="...">
                 <h5 class="p-2">Leon Hanson</h5>
                 <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
               </div>
-              <div class="col-lg-3">
-                <img src="https://thumbs.dreamstime.com/b/cheerful-creative-business-employee-resting-his-swivel-chair-33107996.jpg" class="img-thumbnail" alt="...">
+            </div>
+          </div>
+        </div>
+
+      <!-- Small Carousel Slide 3 -->
+        <div class="carousel-item">
+          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+            <div class="row">
+              <!-- Gin and Jammies SM -->
+              <div class="col-12">
+                <img src="./img/GinJammiesSM.jpg" class="img-thumbnail" alt="...">
                 <h5 class="p-2">Meghan Stone</h5>
                 <p>Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
               </div>
-              <div class="col-lg-3">
-                <img src="https://thumbs.dreamstime.com/b/handsome-photographer-camera-office-computer-front-handsome-photographer-camera-office-100399367.jpg" class="img-thumbnail" alt="...">
+              <!-- Carvin Planet SM -->
+              <div class="col-12">
+                <img src="./img/CarvinPlanetSM.jpg" class="img-thumbnail" alt="...">
                 <h5 class="p-2">Willie Perkins</h5>
                 <p>UX Engineer at Moqups. Runner, parent and coffee lover.</p>
               </div>
@@ -157,47 +174,224 @@
           </div>
         </div>
 
-        <div class="carousel-item p-3 d-flex flex-column align-items-center text-center bg-dark text-white">
-          <div class="container">
+      <!-- Small Carousel Slide 4 -->
+        <div class="carousel-item">
+          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
             <div class="row">
-              <div class="col-lg-3">
-                <img src="https://thumbs.dreamstime.com/b/cheerful-beautiful-female-pilot-showing-thumbnail-expressing-happiness-starting-air-trip-cheerful-beautiful-female-pilot-144570269.jpg" class="img-thumbnail"  alt="...">
+              <!-- Melisandre SM -->
+              <div class="col-12">
+                <img src="./img/MelisandreSM.jpg" class="img-thumbnail"  alt="...">
                 <h5 class="p-2">Ruby Jennings</h5>
                 <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
               </div>
-              <div class="col-lg-3">
-                <img src="https://thumbs.dreamstime.com/b/positive-smiling-dark-skinned-guy-showing-his-thumbnail-knitted-sweater-being-great-mood-work-141732636.jpg" class="img-thumbnail" alt="...">
+              <!-- Paper Boats SM-->
+              <div class="col-12">
+                <img src="./img/PaperBoatsSM.jpg" class="img-thumbnail" alt="...">
                 <h5 class="p-2">Leon Hanson</h5>
                 <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
               </div>
-              <div class="col-lg-3">
-                <img src="https://thumbs.dreamstime.com/b/cheerful-creative-business-employee-resting-his-swivel-chair-33107996.jpg" class="img-thumbnail" alt="...">
+            </div>
+          </div>
+        </div>
+
+      <!-- Small Carousel Slide 5-->
+        <div class="carousel-item">
+          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+            <div class="row">
+              <!-- Stupid Pony SM -->
+              <div class="col-12">
+                <img src="./img/StupidPonySM.jpg" class="img-thumbnail" alt="...">
                 <h5 class="p-2">Meghan Stone</h5>
                 <p>Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
               </div>
-              <div class="col-lg-3">
-                <img src="https://thumbs.dreamstime.com/b/handsome-photographer-camera-office-computer-front-handsome-photographer-camera-office-100399367.jpg" class="img-thumbnail" alt="...">
+              <!-- Cold Stone Steve Austin SM-->
+              <div class="col-12">
+                <img src="./img/ColdStoneSM.jpg" class="img-thumbnail" alt="...">
                 <h5 class="p-2">Willie Perkins</h5>
                 <p>UX Engineer at Moqups. Runner, parent and coffee lover.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <!-- Small Carousel Slide 6 -->
+        <div class="carousel-item">
+          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+            <div class="row">
+              <!-- Where's Kevin SM -->
+              <div class="col-12">
+                <img src="./img/KevinSM.jpg" class="img-thumbnail"  alt="...">
+                <h5 class="p-2">Ruby Jennings</h5>
+                <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <!-- Kentucky Field Trip SM -->
+              <div class="col-12">
+                <img src="./img/KentuckySM.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Leon Hanson</h5>
+                <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-      </button>
+        </button>
+
+      </div>
+    </div>
+    
+    <!-- Product Carousel LG -->
+
+    <div id="carouselExampleIndicators-lg" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators-lg" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators-lg" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators-lg" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+      <!-- Large Carousel Slide 1 -->
+        <div class="carousel-item active">
+          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+            <div class="row">
+              <!-- Apple Gobbler LG -->
+              <div class="col-lg-3 col-6">
+                <img src="./img/AppleGobblerLG.png" class="img-thumbnail"  alt="...">
+                <h5 class="p-2">Ruby Jennings</h5>
+                <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <!-- Ope All Berries LG -->
+              <div class="col-lg-3 col-6">
+                <img src="./img/OABLG.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Leon Hanson</h5>
+                <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <!-- Banana French Toasty LG -->
+              <div class="col-lg-3 col-6">
+                <img src="./img/BananaFrenchToastyLG.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Meghan Stone</h5>
+                <p>Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <!-- Marzipan's Labyrinth LG -->
+              <div class="col-lg-3 col-6">
+                <img src="./img/MarzipanLG.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Willie Perkins</h5>
+                <p>UX Engineer at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Large Caroulsel Slide 2 -->
+        <div class="carousel-item">
+          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+            <div class="row">
+              <!-- Gin and Jammies LG -->
+              <div class="col-lg-3 col-6">
+                <img src="./img/GinJammiesLG.jpg" class="img-thumbnail"  alt="...">
+                <h5 class="p-2">Ruby Jennings</h5>
+                <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <!-- Carvin Planet LG -->
+              <div class="col-lg-3 col-6">
+                <img src="./img/CarvinPlanetLG.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Leon Hanson</h5>
+                <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <!-- Melisandre LG -->
+              <div class="col-lg-3 col-6">
+                <img src="./img/MelisandreLG.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Meghan Stone</h5>
+                <p>Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <!-- Paper Boats LG -->
+              <div class="col-lg-3 col-6">
+                <img src="./img/PaperBoatsLG.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Willie Perkins</h5>
+                <p>UX Engineer at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Large Carousel Slide 3 -->
+        <div class="carousel-item">
+          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+            <div class="row">
+              <!-- Stupid Pony LG -->
+              <div class="col-lg-3 col-6">
+                <img src="./img/StupidPonyLG.jpg" class="img-thumbnail"  alt="...">
+                <h5 class="p-2">Ruby Jennings</h5>
+                <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <!-- Cold Stone Steve Austin LG -->
+              <div class="col-lg-3 col-6">
+                <img src="./img/ColdStoneLG.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Leon Hanson</h5>
+                <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <!-- Where's Kevin LG -->
+              <div class="col-lg-3 col-6">
+                <img src="./img/KevinLG.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Meghan Stone</h5>
+                <p>Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+              <!-- Kentucky Field Trip LG -->
+              <div class="col-lg-3 col-6">
+                <img src="./img/KentuckyLG.jpg" class="img-thumbnail" alt="...">
+                <h5 class="p-2">Willie Perkins</h5>
+                <p>UX Engineer at Moqups. Runner, parent and coffee lover.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-lg" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-lg" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
     </div>
 
-    <!-- Best Sellers
+   <!-- Contact Form -->
+    <div class="container">
+      <div class="container bg-light rounded-3 mt-3 mb-3">
+        <div class="container">
+          <form>
+            <div class="mb-3 pt-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-3">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-    <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white">
+</body>
+
+   <!-- Best Sellers -->
+
+    <!-- <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white">
       <h4 class="m-3">The Speakers</h4>
       <h5>Write a few lines about the event speakers to highlight their expertise in the field</h5><br>
     
@@ -228,28 +422,4 @@
     </div> -->
     
     <!-- Contact Form -->
-
-    <div class="container bg-light">
-      <div class="form-wrap">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-    </div>
-
-
-  </body>
 </html>
