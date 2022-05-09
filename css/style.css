@@ -4,7 +4,10 @@
 }
 
 body {
-    background-color: rgba(0,0,0,0.6);
+    background-image: url(../img/blackwoodbackground.jpg);
+    height: 100vh;
+    width: 100vw;
+    /* position: fixed; */
 }
 
 .sticky-nav-bar {
@@ -15,4 +18,31 @@ body {
 
 .border-dashed {
     border-style: dashed;
+    border-color: white;
+}
+
+.grey-overlay {
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* .black-background {
+    background-image: url(../img/dark-wavy-background_23-2148421508.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} */
+
+.blackwood-background {
+    background-image: url(../img/blackwoodbackground.jpg);
+}
+
+.no-padding {
+    padding:0;
+}
+
+.wood-background {
+    background-image: url(../img/wood-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
