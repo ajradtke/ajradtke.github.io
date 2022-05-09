@@ -10,6 +10,8 @@
 
     <link href="/css/style.css" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/914086c2d6.js" crossorigin="anonymous"></script>
+
     <title>Final Project AJR</title>
   </head>
   <body>
@@ -31,16 +33,13 @@
                 <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Best Sellers</a>
+                <a class="nav-link text-white" href="#best-sellers">Best Sellers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Full Catalog</a>
+                <a class="nav-link text-white" target="_blank" href="https://www.4fmeadery.com/storefront">Full Catalog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Event Calendar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Become A Member</a>
+                <a class="nav-link text-white" href="#contact-us">Contact</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -65,25 +64,25 @@
         <div class="carousel-inner" >
           <div class="carousel-item active carousel-image">
             <img src="./img/Backsplash-resize.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+            <div class="carousel-caption d-block">
+              <h5 class="grey-overlay">First slide label</h5>
+              <p class="grey-overlay">Some representative placeholder content for the first slide.</p>
             </div>
           </div>
 
           <div class="carousel-item carousel-image">
             <img src="./img/bartopbottles-resize.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+            <div class="carousel-caption d-block">
+              <h5 class="grey-overlay">Second slide label</h5>
+              <p class="grey-overlay">Some representative placeholder content for the second slide.</p>
             </div>
           </div>
 
           <div class="carousel-item carousel-image">
             <img src="./img/arcticclam-resize.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+            <div class="carousel-caption d-block">
+              <h5 class="grey-overlay">Third slide label</h5>
+              <p class="grey-overlay">Some representative placeholder content for the third slide.</p>
             </div>
           </div>
         </div>
@@ -98,6 +97,16 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    </div>
+
+    <!-- Featured Best Sellers-->
+
+    <div id="best-sellers"></div>
+
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center text-center text-white pt-3">
+      <h2>
+        Featured Best Sellers
+      </h2>
     </div>
 
     <!-- Product Carousel XS-LG -->
@@ -116,7 +125,7 @@
 
       <!-- Small Carousel Slide 1 -->
         <div class="carousel-item active">
-          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+          <div class="container-fluid d-flex flex-column align-items-center text-center text-white p-3">
             <div class="row">
               <!-- Apple Gobbler SM -->
               <div class="col-12">
@@ -136,7 +145,7 @@
 
       <!-- Small Carousel Slide 2 -->
         <div class="carousel-item">
-          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+          <div class="container-fluid d-flex flex-column align-items-center text-center text-white p-3">
             <div class="row">
               <!-- Banana French Toasty SM -->
               <div class="col-12">
@@ -156,7 +165,7 @@
 
       <!-- Small Carousel Slide 3 -->
         <div class="carousel-item">
-          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+          <div class="container-fluid d-flex flex-column align-items-center text-center text-white p-3">
             <div class="row">
               <!-- Gin and Jammies SM -->
               <div class="col-12">
@@ -176,7 +185,7 @@
 
       <!-- Small Carousel Slide 4 -->
         <div class="carousel-item">
-          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+          <div class="container-fluid d-flex flex-column align-items-center text-center text-white p-3">
             <div class="row">
               <!-- Melisandre SM -->
               <div class="col-12">
@@ -196,7 +205,7 @@
 
       <!-- Small Carousel Slide 5-->
         <div class="carousel-item">
-          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+          <div class="container-fluid d-flex flex-column align-items-center text-center text-white p-3">
             <div class="row">
               <!-- Stupid Pony SM -->
               <div class="col-12">
@@ -216,7 +225,7 @@
 
       <!-- Small Carousel Slide 6 -->
         <div class="carousel-item">
-          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+          <div class="container-fluid d-flex flex-column align-items-center text-center text-white p-3">
             <div class="row">
               <!-- Where's Kevin SM -->
               <div class="col-12">
@@ -234,6 +243,7 @@
           </div>
         </div>
         
+        <!-- Small Carousel Buttons -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -256,9 +266,10 @@
         <button type="button" data-bs-target="#carouselExampleIndicators-lg" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
+
       <!-- Large Carousel Slide 1 -->
         <div class="carousel-item active">
-          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+          <div class="container-fluid d-flex flex-column align-items-center text-center text-white p-3">
             <div class="row">
               <!-- Apple Gobbler LG -->
               <div class="col-lg-3 col-6">
@@ -287,9 +298,10 @@
             </div>
           </div>
         </div>
+
       <!-- Large Caroulsel Slide 2 -->
         <div class="carousel-item">
-          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+          <div class="container-fluid d-flex flex-column align-items-center text-center text-white p-3">
             <div class="row">
               <!-- Gin and Jammies LG -->
               <div class="col-lg-3 col-6">
@@ -318,9 +330,10 @@
             </div>
           </div>
         </div>
+
       <!-- Large Carousel Slide 3 -->
         <div class="carousel-item">
-          <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white p-3">
+          <div class="container-fluid d-flex flex-column align-items-center text-center text-white p-3">
             <div class="row">
               <!-- Stupid Pony LG -->
               <div class="col-lg-3 col-6">
@@ -350,6 +363,7 @@
           </div>
         </div>
         
+        <!-- Large Carousel Buttons -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-lg" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -363,10 +377,46 @@
       </div>
     </div>
 
-   <!-- Contact Form -->
-    <div class="container">
-      <div class="container bg-light rounded-3 mt-3 mb-3">
-        <div class="container">
+    <!-- T-Shirt Merchandise -->
+    <div class="container-fluid wood-background">
+        <div class="container-fluid text-white d-flex flex-column justify-content-center align-items-center wood-background p-2">
+          <h2>Featured T-Shirts</h2>
+          <p class="fst-italic">Designs Change Quarterly! Email for details!</p>
+        </div>
+
+      <div class="container-fluid text-white d-flex flex-column flex-lg-row justify-content-around align-items-center text-center p-2">
+      
+        <div>
+          <img src="./img/OhioandToledo300x158.jpg" class="img-thumbnail" alt="...">
+          <h5>Ohio and Toledo</h5>
+        </div>
+      
+      
+        <div>
+          <img src="./img/TameFlame300x158.jpg" class="img-thumbnail" alt="...">
+          <h5>Tame Flame</h5>
+          <h5></h5>
+        </div>
+      
+      
+        <div>
+          <img src="./img/ExperimentalFlame300x158.jpg" class="img-thumbnail" alt="...">
+          <h5>Experimental Flame</h5>
+        </div>
+      </div>
+    </div>
+
+   <!-- Our Story / Meet the Owners -->
+
+   <!-- Footer / Contact Form -->
+
+   
+   <!-- Footer Left Half / Contact Form -->
+  <div class="container-fluid" id="contact-us">
+    <div class="row" style="width: 100%">
+    
+      <div class="col-lg-6 col-12">
+        <div class="bg-light rounded-3 p-3">
           <form>
             <div class="mb-3 pt-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -385,41 +435,32 @@
           </form>
         </div>
       </div>
+      
+      <!-- Footer Right Half-->
+      <div class="container col-12 col-lg-6 d-flex">
+        <!-- Google Map Embed -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11936.794352237383!2d-83.6701942!3d41.5865864!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb01260512660946!2sFour%20Fires%20Meadery!5e0!3m2!1sen!2sus!4v1652034865299!5m2!1sen!2sus" width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-3"></iframe>
+      </div>
+    </div>
+  
+    <!-- Contact Us and Socials -->
+    <div class="container d-flex align-items-center justify-content-center text-white">
+      <p class="fs-2" style="margin-bottom: -15px;">Contact Us:</p>
     </div>
 
-</body>
+    <div class="container d-flex justify-content-center">
+      <a class="m-3" href="#"><i class="fa-brands fa-3x fa-facebook-square" style="color: white"></i></a>
+      <a class="m-3" href="#"><i class="fa-brands fa-3x fa-instagram-square" style="color: white;"></i></a>
+      <a class="m-3" href="#"><i class="fa-brands fa-3x fa-pinterest-square" style="color: white"></i></a>
+      <a class="m-3" href="#"><i class="fa-brands fa-3x fa-linkedin" style="color: white"></i></a>
+    </div>
+  
+<div class="container-fluid col-12 d-flex justify-content-center text-center text-white">
+  <p>
+    1683 Lance Point Rd #106<br>Maumee, OH 43537<br>&copy Four Fires Meadery 2022
+  </p>
+</div>
+  
 
-   <!-- Best Sellers -->
-
-    <!-- <div class="container-fluid d-flex flex-column align-items-center text-center bg-dark text-white">
-      <h4 class="m-3">The Speakers</h4>
-      <h5>Write a few lines about the event speakers to highlight their expertise in the field</h5><br>
-    
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <img src="https://thumbs.dreamstime.com/b/cheerful-beautiful-female-pilot-showing-thumbnail-expressing-happiness-starting-air-trip-cheerful-beautiful-female-pilot-144570269.jpg" class="img-thumbnail"  alt="...">
-            <h5 class="p-2">Ruby Jennings</h5>
-            <p>Product Manager at Moqups. Runner, parent and coffee lover.</p>
-          </div>
-          <div class="col-lg-3">
-            <img src="https://thumbs.dreamstime.com/b/positive-smiling-dark-skinned-guy-showing-his-thumbnail-knitted-sweater-being-great-mood-work-141732636.jpg" class="img-thumbnail" alt="...">
-            <h5 class="p-2">Leon Hanson</h5>
-            <p>Sales Manager at Moqups. Runner, parent and coffee lover.</p>
-          </div>
-          <div class="col-lg-3">
-            <img src="https://thumbs.dreamstime.com/b/cheerful-creative-business-employee-resting-his-swivel-chair-33107996.jpg" class="img-thumbnail" alt="...">
-            <h5 class="p-2">Meghan Stone</h5>
-            <p>Marketing Specialist at Moqups. Runner, parent and coffee lover.</p>
-          </div>
-          <div class="col-lg-3">
-            <img src="https://thumbs.dreamstime.com/b/handsome-photographer-camera-office-computer-front-handsome-photographer-camera-office-100399367.jpg" class="img-thumbnail" alt="...">
-            <h5 class="p-2">Willie Perkins</h5>
-            <p>UX Engineer at Moqups. Runner, parent and coffee lover.</p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    
-    <!-- Contact Form -->
+  </body>
 </html>
