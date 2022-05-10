@@ -12,6 +12,14 @@ body {
     /* position: fixed; */
 }
 
+.volkhov-font {
+    font-family: Volkhov, serif;
+}
+
+h5, .open-sans-font {
+    font-family: Open Sans, sans-serif;
+}
+
 .sticky-nav-bar {
     position: sticky;
     top: 0;
@@ -42,15 +50,6 @@ body {
     background-position: center;
 }
 
-/* .section-navigation ::before {
-    content: "";
-    display: block;
-    margin-top: -140px;
-    height: 140px;
-    background-color: red;
-    border-style: dashed;
-} */
-
 #best-sellers {
     position: relative;
     bottom: 140px;
@@ -58,6 +57,12 @@ body {
 }
 
 #t-shirts {
+    position: relative;
+    bottom: 140px;
+    float: right;
+}
+
+#contact-us {
     position: relative;
     bottom: 140px;
     float: right;
