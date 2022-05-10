@@ -1,3 +1,6 @@
+* {
+    margin: 0;
+}
 .container-fluid {
     margin: 0;
     padding: 0;
@@ -5,8 +8,7 @@
 
 body {
     background-image: url(../img/blackwoodbackground.jpg);
-    height: 100vh;
-    width: 100vw;
+    
     /* position: fixed; */
 }
 
@@ -25,13 +27,6 @@ body {
     background-color: rgba(0,0,0,0.5);
 }
 
-/* .black-background {
-    background-image: url(../img/dark-wavy-background_23-2148421508.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-} */
-
 .blackwood-background {
     background-image: url(../img/blackwoodbackground.jpg);
 }
@@ -46,3 +41,25 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+/* .section-navigation ::before {
+    content: "";
+    display: block;
+    margin-top: -140px;
+    height: 140px;
+    background-color: red;
+    border-style: dashed;
+} */
+
+#best-sellers {
+    position: relative;
+    bottom: 140px;
+    float: right;
+}
+
+#t-shirts {
+    position: relative;
+    bottom: 140px;
+    float: right;
+}
+
