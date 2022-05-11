@@ -8,7 +8,7 @@
 
 body {
 
-    background-image: url(../img/blackwoodbackground.jpg);
+    background-image: url(./img/blackwoodbackground.jpg);
 }
 
 .volkhov-font {
@@ -35,7 +35,7 @@ h5, .open-sans-font {
 }
 
 .blackwood-background {
-    background-image: url(../img/blackwoodbackground.jpg);
+    background-image: url(./img/blackwoodbackground.jpg);
 }
 
 .no-padding {
@@ -43,7 +43,7 @@ h5, .open-sans-font {
 }
 
 .wood-background {
-    background-image: url(../img/wood-background.jpg);
+    background-image: url(./img/wood-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
